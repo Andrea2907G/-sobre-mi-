@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Perfil</title>
+</head>
+
+<body>
+    <header id="mi_perfil"> <!-- Esta es la cabecera de la página la ubico separada del navegador -->
+        <h1>Mi perfil</h1>
+    </header>
+
+    <nav> <!-- Esta etiqueta semántica identifica la barra de navegación -->
+        <ul>
+            <li><a href="#mi_perfil">Mi perfil</a></li>
+            <li><a href="#datos_basicos">Datos básicos</a></li>
+            <li><a href="#intereses">Intereses</a></li>
+            <li><a href="#experiencia">Experencias</a></li>
+            <li><a href="#expectativas">Expectativas</a></li>
+        </ul>
+    </nav>
+
+    <main> <!-- Esta etiqueta anida el contenido principal de la página -->
+        <section id="datos_basicos"> <!-- Cada sección de la página posee un identificador id que uso para asociar a la barra de navegación y definir los links de la etiqueta <a>. Una seccion agrupa contenido relacionado temáticamente dentro de la página.-->
+            <article class="contenedor"> <!-- En esta etiqueta encierro un contenido independiente de la página -->
+                <div>
+                    <h2>Datos Básicos</h2>
+                    <ul>
+                        <li><strong>Nombre:</strong> Verónica Tejera</li>
+                        <li><strong>Edad:</strong> 28 años</li>
+                        <li><strong>País:</strong> Argentina</li>
+                        <li><strong>Email:</strong> tvero@gmail.com</li>
+                        <li><strong>Célular:</strong> +54 9 11 2345 6789</li>
+                    </ul>
+                </div> 
+                <img src="img/perfil.jpg" alt="foto de perfil">
+            </article>
+        </section>
+
+        <hr> <!-- Separo cada sección con una etiqueta hr a la que le agrego estilo en mi hoja de estilos-->
+
+        <section id="intereses" class="contenedor">
+            <article> <!-- Comienza del articulo intereses! -->
+                <h2>Intereses</h2>
+                    <section class="intereses_1"> <!-- Divido el article de la linea 43 en secciones que será un interés particular -->
+                        <img src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_80,w_820/v1566492620/content-items/003/212/919/2-original.png?1566492620" alt="ilustra el interes desarrollo web">
+                        <div class="contenedorTexto"> <!-- Puede haber un article dentro de otro artice?? -->
+                            <h3>Aprender Desarrollo Web</h3>
+                            <p>Me apasiona el mundo de la tecnología y la web. Desde hace algunos años, descubrí mi fascinación por la informática y cómo la programación puede dar vida a ideas y proyectos. Me encanta desafiar mi mente y resolver problemas a través del código. Además, disfruto del diseño y la creatividad, por lo que también me interesan aspectos relacionados con la experiencia de usuario y la interfaz de usuario.</p>
+                        </div>  
+                    </section>
+
+                    <section class="intereses_2">
+                        <div>
+                            <h3>Viajar</h3>
+                            <p>Cuando rompo la rutina y emprendo la ruta, mi mente se abre a nuevas experiencias, respiro profundo el aire de los paisajes, llevo en mí libertad geográfica y temporal donde los horarios no existen y el único objetivo es perder la noción del tiempo.</p>
+                        </div>
+                        <img src="https://www.lavoz.com.ar/resizer/W-LBpHYKxIDM37oQF2a6SQSRFoY=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/573XU46CAZBCHLXRKCMDFRBMZ4.jpg" alt="Imagen de ruta como simbolo de viajes">
+                    </section>
+
+                    <section class="intereses_3">
+                        <img src="https://www.librostube.org/wp-content/uploads/8e84a092899ecbb32a00d6ad4ceacb08.jpg" alt="Imgen de libro en el pasto">
+                        <div>
+                            <h3>Leer</h3>
+                            <p>Cuando no es posible romper la rutina con viajes, si es posible romperla en algún momento del día con una buena lectura. Leer es viajar con los ojos y las letras a lugares y tiempos paralelos a nuestra vida diaria. Es una forma de enriquecer nuestra mente más allá de los objetivos y proyectos personales.</p>
+                        </div>                       
+                    </section> 
+
+            </article> <!-- Fin del articulo intereses! -->
+        </section>
+
+        <hr>
+
+        <section id="experiencia" class="contenedor">
+            <article>
+                <h2 style="text-align: center">Experiencia</h2>
+                <p> Como estudiante inicial de desarrollo web, he realizado cursos en línea y tutoriales para aprender los fundamentos de HTML, CSS y JavaScript. He creado pequeños proyectos personales, como páginas web estáticas y formularios simples, para aplicar mis conocimientos y mejorar mis habilidades. Estoy emocionada por seguir aprendiendo y explorar otras tecnologías como React y Node.js para construir aplicaciones web más interactivas y dinámicas en el futuro.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="expectativas" class="contenedor">
+            <article>
+                <h2 style="text-align: center">Expectativas</h2>
+                <p>Como estudiante inicial de desarrollo web, tengo grandes expectativas para mi crecimiento y desarrollo en esta emocionante industria. Mi principal objetivo es profundizar en mis conocimientos y habilidades técnicas, y eventualmente convertirme en una desarrolladora web competente. Espero poder colaborar con otros estudiantes y profesionales en proyectos interesantes y desafiantes que me permitan aprender de diferentes enfoques y perspectivas. Anhelo obtener una experiencia práctica en un entorno de trabajo real, donde pueda aplicar lo que he aprendido y enfrentar nuevos desafíos para mejorar constantemente. Además, deseo ser parte de una comunidad en la que podamos compartir conocimientos y apoyarnos mutuamente para alcanzar nuestras metas en el mundo del desarrollo web..</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer> <!-- Esta etiqueta semántica identifica al pie de página -->
+        <p>Gracias por visitar mi perfil. ¡Espero que tengas un muy buen día!</p>
+    </footer>
+
+</body>
+</html>
