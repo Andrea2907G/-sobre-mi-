@@ -1,0 +1,187 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Nunito+Sans:opsz@6..12&display=swap');
+
+
+/* Estilos generales */
+
+* {  /* css.start */
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-color: #150721;
+    color: whitesmoke;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 100;
+}
+
+nav {
+    padding: 50px 50px 0 50px;
+}
+
+a { /* Estilo a la etiqueta a */
+    text-decoration: none;  /* Elimina el estilo por defecto de la etiqueta a */
+    color: whitesmoke; 
+}
+
+a:hover, a:active {
+    color: #B74BD5; 
+}
+
+.contenedor {
+    text-align: center;
+    width: 70vw;
+    padding: 50px;
+    margin: 70px auto; 
+    background-color: #150b4f;
+    border-radius: 10px;
+    box-shadow: black 10px 10px 50px;
+    border: solid #B74BD5 1px;
+}
+
+.contenedor p {
+    font-size: 18px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2,
+h3,
+h4 {
+    margin-bottom: 10px; 
+}
+
+p, label {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* Fin de estilos generales */
+
+/* Estilos sección bloque contenedor */
+
+.bloque-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilo select -menú desplegable- */
+
+#operador {
+    text-align: center;
+    height: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: 'Amaranth', sans-serif;
+    background-color: #080450;
+    border: #000000 1px solid;
+    outline: none;
+    border: #B74BD5 1px solid;
+    
+}
+
+/* Estilo input */
+
+.estilo-input {
+    padding: 0 5px;
+    border: solid #B74BD5 1px;
+    height: 30px;
+    background-color: #080450;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    transition: border-color 0.3s; 
+    outline: none; 
+}
+
+.estilo-input:focus {
+    outline: 1px solid #B74BD5 ;
+    border: #080450 1px solid;
+}
+
+input, select {
+    margin-bottom: 16px;
+    width: 65%;
+    min-width: 208px;
+}
+
+/* Estilo boton */
+
+#btn-calcular, #btn-reset{ 
+    padding: 8px 35px;
+    margin-bottom: 16px;
+    background-color: #B74BD5;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 0px 10px;
+    transition: background-color 0.25s, transform 0.2s, box-shadow 0.2s;
+}
+
+#btn-calcular:hover, #btn-calcular:active, #btn-reset:hover, #btn-reset:active {
+    cursor: pointer;
+    border: 1px #B74BD5 solid ;
+    color: #B74BD5;
+    background-color: #150B4F;
+
+}
+
+#btn-calcular:active, #btn-reset {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+/* Estilo area de resultado */
+
+
+#contenedor-resultado {
+    width: 40%; /*Fijo el ancho del contenedor en funcion del ancho de la section*/
+    min-width: 208px;
+    min-width: 126px; /* Agrego un limite inferior al decrecimiento del contenedor*/
+    height: 40px; /*Altura fija para el contenedor*/
+    background-color: #ffffff;
+    color:#000000;
+    border: #000847 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.395) 2px 2px 10px;
+    display: flex; /*Aplico flexbox para alinear el p al centro del contenedor*/
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contenedor-resultado p {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 75%;
+    }
+    #contenedor-resultado {
+        width: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor {
+        width: 80vw;
+        min-width: 236px;
+    }
+}

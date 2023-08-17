@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <nav><a href="../index.html">Volver</a></nav>
+    <header class="contenedor">
+        <h1>Calculadora</h1>
+        <p>Esta es una calculadora simple para realizar operaciones de suma, resta, multiplicación y división. !Te invito a ingresar valores!</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="bloque-contenedor">
+        
+            <!-- Operando 1 -->
+
+            <label for="primeraEntrada">Primer operando</label>
+            <input class="estilo-input" type="number" name="primeraEntrada" id="primera-entrada" placeholder=" Ingresa un valor numérico">
+
+            <!-- Operador -->
+            <label for="operador">Elige el tipo de operación</label>
+            <select name="operador" id="operador">
+                <option value="suma">Sumar</option>
+                <option value="resta">Restar</option>
+                <option value="multiplicacion">Multiplicar</option>
+                <option value="division">Dividir</option>
+            </select>
+
+            <!-- Operando 2 -->
+
+            <label for="SegundaEntrada">Segundo operando</label>
+            <input class="estilo-input" type="number" name="SegundaEntrada" id="segunda-entrada" placeholder=" Ingresa un valor numérico">
+            
+            <!-- Boton calcular -->
+
+            <button id="btn-calcular">Calcular</button>
+
+            <button id="btn-reset">Resetear</button>
+            
+            <!-- Resultado en pantalla -->
+
+            <p>Resultado</p>
+
+            <div id="contenedor-resultado">
+                <p></p>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="prueba.js"></script>
+</body>
+</html>
