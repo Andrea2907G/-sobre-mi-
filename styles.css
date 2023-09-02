@@ -19,7 +19,7 @@ a { /* Estilo a la etiqueta a */
 }
 
 hr {
-    width: 100vw;
+    width: 100%;
     margin: 0 auto; /* Establece los márgenes izquierdo y derecho a "auto" para centrar horizontalmente */
     border: solid 15px #3A0B26 ;
     box-shadow: 10px 0px 40px #1f0614;
@@ -68,7 +68,7 @@ nav {
 nav ul {
     display: flex; /*Utilice display flex para organizar la barra de navegación horizontalmente*/
     justify-content:space-around;
-    align-items: center;
+    align-items: baseline;
 }
 
 
@@ -82,7 +82,7 @@ nav ul li{
 /*Estilo del Header*/
 
 header {
-    background-image: url(../img/fondo.jpg);
+    background-image: url(./img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -167,4 +167,46 @@ footer {
 
 .nuevo-estilo {
     background-color: blue;
+}
+
+#cont-submenu {
+    display: grid;
+    place-items: center;
+    position: relative;
+    font-size: 20px;
+    background-color: #0e0309ad;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#submenu {
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    max-height: 0;
+    position: absolute;
+    top: 110%;
+    background-color: #0e0309b4;
+    border-radius: 5px;
+    padding: 10px 0;
+    border-bottom: #3A0B26 3px solid;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 2s ease; /* Añade transición de opacidad */
+}
+
+#cont-submenu:hover #submenu {
+    opacity: 1;
+    max-height: 500px;
+}
+
+#submenu li {
+    margin: auto;
+}
+
+#submenu li:hover{
+    background-color: #3A0B26;
+}
+
+#submenu li a {
+    display: inline-block
 }
