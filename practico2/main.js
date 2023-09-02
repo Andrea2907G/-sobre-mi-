@@ -187,7 +187,7 @@ function elijeTijeras() {
 function elijeComputadora () {
     cambioDeTitulo();
 
-    //Agregar animacion de tres puntos suspensivos //!No implementado todavia
+    //Agregar animacion de tres puntos suspensivos //!No implementado 
 
    jugadaComputadora = Math.floor(Math.random() * 3);
     
@@ -239,14 +239,6 @@ function cambioDeTitulo() {
             titulo.classList.remove("amarillo-texto");
             titulo.classList.add("rojo-texto");
         }, 100);
-    }
-}
-
-function activarDesactivarBotones() { // !NO USADO POR AHORA
-    if (botonActivado) {
-        botonActivado = false;
-    } else {
-        botonActivado = true;
     }
 }
 
@@ -317,6 +309,7 @@ function siguienteIntento() {
         cambioDeTitulo();
         divConAfterBefore.style.setProperty('--contenido-before', `""`);
         divConAfterBefore.style.setProperty('--contenido-after', `""`);
+        
         //botonSiguiente.removeEventListener('click', siguienteIntento); // ! No implementado
 
         agregarEventListener();

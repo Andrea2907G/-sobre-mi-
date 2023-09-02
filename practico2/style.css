@@ -21,6 +21,22 @@ body {
     background-position: center;
 }
 
+nav {
+    padding: 50px 50px 0 50px;
+}
+
+a { /* Estilo a la etiqueta a */
+    text-decoration: none;  /* Elimina el estilo por defecto de la etiqueta a */
+    color: whitesmoke; 
+    font-size: 30px;
+}
+
+a:hover, a:active {
+    color: #B74BD5; 
+}
+
+/* Oculto el main al principio, aparecerá despues de apretar el boton jugar!*/
+
 #zona-juego {
     display: none;
 }
